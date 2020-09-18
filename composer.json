@@ -30,5 +30,16 @@
                 "Fcm": "Angga\\Fcm\\FcmFacade"
             }
         }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": {
+        "dev-package": {
+            "type" : "path",
+            "url": "C:\\laragon\\www\\package-laravel-fcm",
+            "options": {
+                "symlink": true
+            }
+        }
     }
 }
