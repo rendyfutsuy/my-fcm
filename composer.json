@@ -1,5 +1,6 @@
 {
     "name": "rendyfutsuy/my-fcm",
+    "description": "A simple package that help you send a Firebase notification with your Laravel applications.",
     "require-dev": {},
     "license": "MIT",
     "authors": [

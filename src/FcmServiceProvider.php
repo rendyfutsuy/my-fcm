@@ -17,10 +17,10 @@ class FcmServiceProvider extends ServiceProvider
     {
         if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../resources/config/laravel-fcm.php' => config_path('laravel-fcm.php'),
+                __DIR__ . '/../resources/config/my-fcm.php' => config_path('my-fcm.php'),
             ]);
         } elseif ($this->app instanceof LumenApplication) {
-            $this->app->configure('laravel-fcm');
+            $this->app->configure('my-fcm');
         }
     }
 
@@ -28,7 +28,7 @@ class FcmServiceProvider extends ServiceProvider
     {
         $this->app->bind('fcm', function ($app) {
             return new Fcm(
-                config('laravel-fcm.server_key')
+                config('my-fcm.server_key')
             );
         });
     }
