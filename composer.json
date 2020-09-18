@@ -1,0 +1,16 @@
+{
+    "name": "rendyfutsuy/my-fcm",
+    "require-dev": {},
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rendyfutsuy",
+            "email": "rendyx942000@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.0",
+        "illuminate/support": "^8.0"
+    }
+}
