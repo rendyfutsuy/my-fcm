@@ -30,7 +30,5 @@
                 "Fcm": "Angga\\Fcm\\FcmFacade"
             }
         }
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+    }
 }
