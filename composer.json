@@ -8,9 +8,27 @@
             "email": "rendyx942000@gmail.com"
         }
     ],
+    "autoload" : {
+        "psr-4" : {
+            "Angga\\Fcm\\" : "src/"
+        },
+        "files" : [
+            "src/helpers.php"
+        ]
+    },
     "minimum-stability": "dev",
     "require": {
         "php": "^7.0",
         "illuminate/support": "^8.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Angga\\Fcm\\FcmServiceProvider"
+            ],
+            "aliases" : {
+                "Fcm": "Angga\\Fcm\\FcmFacade"
+            }
+        }
     }
 }
